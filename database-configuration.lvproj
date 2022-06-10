@@ -67,8 +67,28 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="_Test" Type="Folder">
-			<Item Name="DataBase_mysql_Tests.lvlib" Type="Library" URL="../_Test/DataBase_mysql_Tests/DataBase_mysql_Tests.lvlib"/>
-			<Item Name="Sandbox.lvlib" Type="Library" URL="../_Test/Sandbox.lvlib"/>
+			<Item Name="Cfg" Type="Folder">
+				<Item Name="mysql tests.lvlib" Type="Library" URL="../_Test/mysql configuration database/mysql tests.lvlib"/>
+				<Item Name="Sandbox.lvlib" Type="Library" URL="../_Test/Sandbox.lvlib"/>
+				<Item Name="SQlite cfg tests.lvlib" Type="Library" URL="../_Test/sqlite configuration database/SQlite cfg tests.lvlib"/>
+			</Item>
+			<Item Name="Database" Type="Folder">
+				<Item Name="images" Type="Folder">
+					<Item Name="NLB_546989785EDR_D0622810TRAV00581M_-br2.jpg" Type="Document" URL="../_Test/database-interface_Tests/images/NLB_546989785EDR_D0622810TRAV00581M_-br2.jpg"/>
+					<Item Name="NLB_583741823EDR_D0711390TRAV00722M_-br2.jpg" Type="Document" URL="../_Test/database-interface_Tests/images/NLB_583741823EDR_D0711390TRAV00722M_-br2.jpg"/>
+					<Item Name="NRA_402733370EDR_D0050072TRAV00023M_-br2.jpg" Type="Document" URL="../_Test/database-interface_Tests/images/NRA_402733370EDR_D0050072TRAV00023M_-br2.jpg"/>
+					<Item Name="PIA04982_br.jpg" Type="Document" URL="../_Test/database-interface_Tests/images/PIA04982_br.jpg"/>
+					<Item Name="PIA15970.jpg" Type="Document" URL="../_Test/database-interface_Tests/images/PIA15970.jpg"/>
+				</Item>
+				<Item Name="templates" Type="Folder"/>
+				<Item Name="test database" Type="Folder">
+					<Item Name="blob.db" Type="Document" URL="../_Test/database-interface_Tests/test database/blob.db"/>
+					<Item Name="chinook.db" Type="Document" URL="../_Test/database-interface_Tests/test database/chinook.db"/>
+				</Item>
+				<Item Name="DataBase_mysql_Tests.lvlib" Type="Library" URL="../_Test/DataBase_mysql_Tests/DataBase_mysql_Tests.lvlib"/>
+				<Item Name="Test IDatabase.lvclass" Type="LVClass" URL="../_Test/database-interface_Tests/Test IDatabase/Test IDatabase.lvclass"/>
+				<Item Name="Test sqlite3.lvclass" Type="LVClass" URL="../_Test/database-interface_Tests/Test sqlite3/Test sqlite3.lvclass"/>
+			</Item>
 		</Item>
 		<Item Name="externals" Type="Folder">
 			<Item Name="DataBase" Type="Folder">
@@ -85,6 +105,7 @@
 		<Item Name="configuration-database.lvlib" Type="Library" URL="../Source/configuration-database.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Array Size(s)__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Array Size(s)__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="Build Error Cluster__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Build Error Cluster__ogtk__jki_vi_tester.vi"/>
@@ -251,6 +272,7 @@
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get Strings from Enum TD__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Get Strings from Enum TD__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Get Strings from Enum__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Get Strings from Enum__ogtk__jki_vi_tester.vi"/>
+				<Item Name="Get System Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/Get System Directory.vi"/>
 				<Item Name="Get TDEnum from Data__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Get TDEnum from Data__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="Get Waveform Type Enum from Data__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Get Waveform Type Enum from Data__ogtk__jki_vi_tester.vi"/>
@@ -267,6 +289,7 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="Multi-line String to Array__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Multi-line String to Array__ogtk__jki_vi_tester.vi"/>
 				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
+				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Random Number - Within Range__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Random Number - Within Range__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Read BMP File Data.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Read BMP File Data.vi"/>
@@ -403,6 +426,7 @@
 				<Item Name="Strip Path Extension - String__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Strip Path Extension - String__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Strip Path Extension__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Strip Path Extension__ogtk__jki_vi_tester.vi"/>
 				<Item Name="Strip Units__ogtk__jki_vi_tester.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/_support/Support.llb/Strip Units__ogtk__jki_vi_tester.vi"/>
+				<Item Name="System Directory Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/sysdir.llb/System Directory Type.ctl"/>
 				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl"/>
 				<Item Name="TestCase.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/TestCase.llb/TestCase.lvclass"/>
 				<Item Name="TestLoader.lvclass" Type="LVClass" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/VI Tester/TestLoader.llb/TestLoader.lvclass"/>
