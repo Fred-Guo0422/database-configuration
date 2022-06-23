@@ -89,6 +89,7 @@
 				<Item Name="Test IDatabase.lvclass" Type="LVClass" URL="../_Test/database-interface_Tests/Test IDatabase/Test IDatabase.lvclass"/>
 				<Item Name="Test sqlite3.lvclass" Type="LVClass" URL="../_Test/database-interface_Tests/Test sqlite3/Test sqlite3.lvclass"/>
 			</Item>
+			<Item Name="Test sqlite3.vi" Type="VI" URL="../_Test/database-interface_Tests/Test sqlite3.vi"/>
 		</Item>
 		<Item Name="externals" Type="Folder">
 			<Item Name="DataBase" Type="Folder">
